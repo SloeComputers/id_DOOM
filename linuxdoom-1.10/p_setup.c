@@ -533,7 +533,7 @@ void P_GroupLines (void)
     }
 	
     // build line tables for each sector	
-    linebuffer = Z_Malloc (total*4, PU_LEVEL, 0);
+    linebuffer = Z_Malloc(total * sizeof(*linebuffer), PU_LEVEL, 0);
     sector = sectors;
     for (i=0 ; i<numsectors ; i++, sector++)
     {
@@ -588,7 +588,7 @@ P_SetupLevel
   skill_t	skill)
 {
     int		i;
-    char	lumpname[9];
+    char	lumpname[32];
     int		lumpnum;
 	
     totalkills = totalitems = totalsecret = wminfo.maxfrags = 0;

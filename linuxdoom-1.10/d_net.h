@@ -23,6 +23,8 @@
 #ifndef __D_NET__
 #define __D_NET__
 
+#include <stdint.h>
+
 #include "d_player.h"
 
 
@@ -79,7 +81,7 @@ typedef struct
 typedef struct
 {
     // Supposed to be DOOMCOM_ID?
-    long		id;
+    uint32_t        	id;
     
     // DOOM executes an int to execute commands.
     short		intnum;		
