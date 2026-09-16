@@ -491,7 +491,7 @@ void R_InitTextures (void)
 
     totalwidth = 0;
     
-    //	Really complex printing shit...
+    //	Really complex printing...
     temp1 = W_GetNumForName ("S_START");  // P_???????
     temp2 = W_GetNumForName ("S_END") - 1;
     temp3 = ((temp2-temp1+63)/64) + ((numtextures+63)/64);

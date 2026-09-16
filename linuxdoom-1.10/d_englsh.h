@@ -357,7 +357,7 @@
 //	F_Finale.C
 //
 #define E1TEXT \
-"Once you beat the big badasses and\n"\
+"Once you beat the big bosses and\n"\
 "clean out the moon base you're supposed\n"\
 "to win, aren't you? Aren't you? Where's\n"\
 "your fat reward and ticket home? What\n"\
@@ -398,7 +398,7 @@
 "The loathsome spiderdemon that\n"\
 "masterminded the invasion of the moon\n"\
 "bases and caused so much death has had\n"\
-"its ass kicked for all time.\n"\
+"its butt kicked for all time.\n"\
 "\n"\
 "A hidden doorway opens and you enter.\n"\
 "You've proven too tough for Hell to\n"\
@@ -661,7 +661,7 @@
 "Time for a vacation. You've burst the\n"\
 "bowels of hell and by golly you're ready\n"\
 "for a break. You mutter to yourself,\n"\
-"Maybe someone else can kick Hell's ass\n"\
+"Maybe someone else can kick Hell's butt\n"\
 "next time around. Ahead lies a quiet town,\n"\
 "with peaceful flowing water, quaint\n"\
 "buildings, and presumably no Hellspawn.\n"\

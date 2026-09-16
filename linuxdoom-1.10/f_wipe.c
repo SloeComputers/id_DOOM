@@ -48,7 +48,7 @@ static byte*	wipe_scr;
 
 
 void
-wipe_shittyColMajorXform
+wipe_awkwardColMajorXform
 ( short*	array,
   int		width,
   int		height )
@@ -150,8 +150,8 @@ wipe_initMelt
     
     // makes this wipe faster (in theory)
     // to have stuff in column-major format
-    wipe_shittyColMajorXform((short*)wipe_scr_start, width/2, height);
-    wipe_shittyColMajorXform((short*)wipe_scr_end, width/2, height);
+    wipe_awkwardColMajorXform((short*)wipe_scr_start, width/2, height);
+    wipe_awkwardColMajorXform((short*)wipe_scr_end, width/2, height);
     
     // setup initial column positions
     // (y<0 => not ready to scroll yet)

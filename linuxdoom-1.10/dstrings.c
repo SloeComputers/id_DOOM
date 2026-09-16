@@ -54,12 +54,12 @@ char* endmsg[NUM_QUITMESSAGES+1]=
   "you're lucky i don't smack\nyou for thinking about leaving."
 
   // FinalDOOM?
-  "fuck you, pussy!\nget the fuck out!",
-  "you quit and i'll jizz\nin your cystholes!",
-  "if you leave, i'll make\nthe lord drink my jizz.",
-  "hey, ron! can we say\n'fuck' in the game?",
+  "get lost, wimp!\nget the heck out!",
+  "you quit and i'll\nlaugh my head off!",
+  "if you leave, i'll make\nthe dog drink my tears.",
+  "hey, ron! can we say\n'heck' in the game?",
   "i'd leave: this is just\nmore monsters and levels.\nwhat a load.",
-  "suck it down, asshole!\nyou're a fucking wimp!",
+  "take that, butt-head!\nyou're a total wimp!",
   "don't quit now! we're \nstill spending your money!",
 
   // Internal debug. Different style, too.

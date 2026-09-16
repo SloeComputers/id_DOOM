@@ -96,8 +96,8 @@ static char		chat_dest[MAXPLAYERS];
 static hu_itext_t w_inputbuffer[MAXPLAYERS];
 
 static boolean		message_on;
-boolean			message_dontfuckwithme;
-static boolean		message_nottobefuckedwith;
+boolean			message_dontmesswithme;
+static boolean		message_nottobemessedwith;
 
 static hu_stext_t	w_message;
 static int		message_counter;
@@ -427,8 +427,8 @@ void HU_Start(void)
 
     plr = &players[consoleplayer];
     message_on = false;
-    message_dontfuckwithme = false;
-    message_nottobefuckedwith = false;
+    message_dontmesswithme = false;
+    message_nottobemessedwith = false;
     chat_on = false;
 
     // create the message widget
@@ -512,22 +512,22 @@ void HU_Ticker(void)
     if (message_counter && !--message_counter)
     {
 	message_on = false;
-	message_nottobefuckedwith = false;
+	message_nottobemessedwith = false;
     }
 
-    if (showMessages || message_dontfuckwithme)
+    if (showMessages || message_dontmesswithme)
     {
 
 	// display message if necessary
-	if ((plr->message && !message_nottobefuckedwith)
-	    || (plr->message && message_dontfuckwithme))
+	if ((plr->message && !message_nottobemessedwith)
+	    || (plr->message && message_dontmesswithme))
 	{
 	    HUlib_addMessageToSText(&w_message, 0, plr->message);
 	    plr->message = 0;
 	    message_on = true;
 	    message_counter = HU_MSGTIMEOUT;
-	    message_nottobefuckedwith = message_dontfuckwithme;
-	    message_dontfuckwithme = 0;
+	    message_nottobemessedwith = message_dontmesswithme;
+	    message_dontmesswithme = 0;
 	}
 
     } // else message_on = false;
@@ -559,7 +559,7 @@ void HU_Ticker(void)
 						    player_names[i],
 						    w_inputbuffer[i].l.l);
 			    
-			    message_nottobefuckedwith = true;
+			    message_nottobemessedwith = true;
 			    message_on = true;
 			    message_counter = HU_MSGTIMEOUT;
 			    if ( gamemode == commercial )

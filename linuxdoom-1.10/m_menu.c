@@ -66,7 +66,7 @@ rcsid[] = "$Id: m_menu.c,v 1.7 1997/02/03 22:45:10 b1 Exp $";
 
 
 extern patch_t*		hu_font[HU_FONTSIZE];
-extern boolean		message_dontfuckwithme;
+extern boolean		message_dontmesswithme;
 
 extern boolean		chat_on;		// in heads-up code
 
@@ -986,7 +986,7 @@ void M_ChangeMessages(int choice)
     else
 	players[consoleplayer].message = MSGON ;
 
-    message_dontfuckwithme = true;
+    message_dontmesswithme = true;
 }
 
 

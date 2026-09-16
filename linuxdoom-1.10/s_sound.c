@@ -369,7 +369,7 @@ S_StartSoundAtVolume
   if (!sfx->data)
   {
     fprintf( stderr,
-	     "S_StartSoundAtVolume: 16bit and not pre-cached - wtf?\n");
+	     "S_StartSoundAtVolume: 16bit and not pre-cached - oops?\n");
 
     // DOS remains, 8bit handling
     //sfx->data = (void *) W_CacheLumpNum(sfx->lumpnum, PU_MUSIC);
@@ -855,7 +855,7 @@ S_getChannel
 
 	if (cnum == numChannels)
 	{
-	    // FUCK!  No lower priority.  Sorry, Charlie.    
+	    // YIKES!  No lower priority.  Sorry, Charlie.    
 	    return -1;
 	}
 	else

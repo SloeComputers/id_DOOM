@@ -394,7 +394,7 @@ static int	st_randomnumber;
 
 
 
-// Massive bunches of cheat shit
+// Massive bunches of cheat stuff
 //  to keep it from being easy to figure them out.
 // Yeah, right...
 unsigned char	cheat_mus_seq[] =
@@ -560,7 +560,7 @@ ST_Responder (event_t* ev)
 	else 
 	  plyr->message = STSTR_DQDOFF;
       }
-      // 'fa' cheat for killer fucking arsenal
+      // 'fa' cheat for killer arsenal
       else if (cht_CheckCheat(&cheat_ammonokey, ev->data1))
       {
 	plyr->armorpoints = 200;
